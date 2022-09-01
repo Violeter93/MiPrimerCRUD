@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiPrimerCRUD", "MiPrimerCRUD\MiPrimerCRUD.csproj", "{170D8B89-36A9-4FF8-87FF-8786035E93C9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F426DCB4-6EA2-49F5-8A12-852D35ABF28F} = {F426DCB4-6EA2-49F5-8A12-852D35ABF28F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaInfraestructura", "CapaInfraestructura\CapaInfraestructura.csproj", "{F426DCB4-6EA2-49F5-8A12-852D35ABF28F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{170D8B89-36A9-4FF8-87FF-8786035E93C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170D8B89-36A9-4FF8-87FF-8786035E93C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170D8B89-36A9-4FF8-87FF-8786035E93C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170D8B89-36A9-4FF8-87FF-8786035E93C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F426DCB4-6EA2-49F5-8A12-852D35ABF28F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F426DCB4-6EA2-49F5-8A12-852D35ABF28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F426DCB4-6EA2-49F5-8A12-852D35ABF28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F426DCB4-6EA2-49F5-8A12-852D35ABF28F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7F1E89F-D418-4085-B5ED-2F4DF7C6CF7C}
+	EndGlobalSection
+EndGlobal

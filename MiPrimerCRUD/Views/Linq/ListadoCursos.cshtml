@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Lista de cursos";
+}
+
+@{
+    Layout = "_Secundario";
+}
+
+@model IQueryable<Curso>
+
+<h1>Ejemplos de Linq</h1>
+<form asp-controller="Linq" asp-action="ListadoCursos" method="GET">
+    <div class="row">
+        <div class="col-md-4">
+            <label>Filtro</label>
+            <input name="filtro" value="@ViewBag.filtro" class="form-control" />
+
+        </div>
+        <div class="col-md-4">
+            <label>Fecha desde</label>
+
+            <input type="date" name="fechaDesde" value="@ViewBag.fechaDesde" class="form-control" />
+
+        </div>
+        <div class="col-md-4">
+            <label>Fecha hasta</label>
+
+            <input type="date" name="fechaHasta" value="@ViewBag.fechaHasta" class="form-control"   />
+
+        </div>
+    </div>
+    <button class="btn btn-secondary btn-sm" type="submit">Buscar</button>
+</form>
+<table class="table table-striped mt-3">
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Lugar</th>
+        <th>Fecha de Inicio</th>
+        <th>Activo</th>
+    </tr>
+
+    @foreach (var cur in Model)
+    {
+        <tr>
+            <td>@cur.Id</td>
+            <td>@cur.Nombre</td>
+            <td>@cur.Lugar</td>
+            <td>@cur.FechaInicio</td>
+            <td>@cur.Activo</td>
+
+        </tr>
+
+    }
+</table>
+<p> @ViewBag.autor</p>

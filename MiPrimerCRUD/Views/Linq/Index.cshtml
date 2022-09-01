@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+@model IQueryable<Asignatura>
+
+<h1>Ejemplos de Linq</h1>
+<form asp-controller="Linq" asp-action="Index" method="GET" >
+<input name="filtro" value="@ViewBag.filtro"/>
+<button class="btn btn-secondary btn-sm" type="submit">Buscar</button>
+</form>
+<table class="table table-striped mt-3">
+
+@foreach( var asig in Model){
+    <tr>
+        <td>@asig.Id</td>
+            <td>@asig.Nombre</td>
+            <td>@asig.Curso?.Nombre</td>
+    </tr>
+    
+}
+</table>
